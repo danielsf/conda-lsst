@@ -11,9 +11,9 @@ index 0397b77..bd52d91 100644
  
  def _initEnvironment():
 @@ -174,6 +175,12 @@ def _initEnvironment():
-             env.Append(SHLINKFLAGS = ["-Wl,-install_name", "-Wl,${TARGET.file}"])
+             env.Append(SHLINKFLAGS=["-Wl,-install_name", "-Wl,${TARGET.file}"])
          if not re.search(r"-headerpad_max_install_names", str(env['SHLINKFLAGS'])):
-             env.Append(SHLINKFLAGS = ["-Wl,-headerpad_max_install_names"])
+             env.Append(SHLINKFLAGS=["-Wl,-headerpad_max_install_names"])
 +        #
 +        # We want to be explicit about the OS X version we're targeting
 +        #
