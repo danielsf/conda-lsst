@@ -98,6 +98,9 @@ dependencies:
   sims_maf:
     run:   [ "ipython-notebook >=3.0" ]
     build: [ "ipython-notebook >=3.0" ]
+  sims_skybrightness:
+    run:   [sqlalchemy]
+    build: [sqlalchemy]
   sims_operations:
     run:   [ requests ]
     build: [ requests ]
